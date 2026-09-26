@@ -9,7 +9,7 @@ Developed as part of the **SLGD (Large-Scale Linear Systems)** course in the **M
 
 ---
 
-## 📌 Overview
+## Overview
 
 When solving high-dimensional linear systems, direct methods like LU decomposition or Gaussian elimination become computationally expensive ($O(N^3)$ complexity) and memory-intensive. Iterative solvers approximate the solution $x$ with controlled tolerance and significantly reduce memory usage when combined with **Sparse Matrix** storage.
 
@@ -20,7 +20,7 @@ When solving high-dimensional linear systems, direct methods like LU decompositi
 
 ---
 
-## 📐 Mathematical Background
+## Mathematical Background
 
 A system $Ax = b$ is split as $A = M - N$, leading to the iteration:
 $$x^{(k+1)} = M^{-1} N x^{(k)} + M^{-1} b$$
@@ -37,7 +37,7 @@ $$\rho(M^{-1}N) < 1$$
 
 ---
 
-## 📊 Performance Analysis & Benchmarks
+## Performance Analysis & Benchmarks
 
 ### 1. Storage Impact: Dense vs Sparse CSR (Jacobi)
 Using **Compressed Sparse Row (CSR)** matrix representations drastically speeds up computation for large tridiagonal matrices ($N \ge 1000$).
@@ -53,7 +53,7 @@ where $\rho(B_J)$ is the spectral radius of the Jacobi iteration matrix.
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -77,7 +77,7 @@ python main.py
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 ├── assets/                  # Plots and images for documentation
